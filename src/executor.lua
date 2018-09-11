@@ -3,7 +3,7 @@ do
   local send = function()
     tmr.unregister(0);
     local exec = require("ir")
-    exec.nec(2, 0x02aa44bb)
+    exec.nec(2, 0x52a3e788)
   end
   
   local command = function()

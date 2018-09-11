@@ -7,11 +7,11 @@ if POST['data'] ~= nil then
   exec.sch(data.tm, data.cron)
   rsp = '{"result": "OK"}'
 end
-local cmd = POST['command']
+local cmd = POST["command"]
 if cmd ~= nil then
   if cmd == "test" then
     local exec = require("ir")
-    exec.nec(2, 0x02aa44bb)
+    exec.nec(2, 0x52a3e788)
     rsp = '{"result": "OK"}'
   end
 end
